@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saadullah Watches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="brand">Saad's Watches</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                    <h1 data-aos="slide-up" data-aos-duration="1000" data-aos-delay="300">Depolet Model 23</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Experience luxury and precision with our premium collection of smartwatches. Designed for the modern lifestyle with cutting-edge technology and timeless elegance.</p>
+                    <a href="#features" class="btn btn-primary" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">Discover Now</a>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="assets/hero/w2.png" alt="Apple Watch 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/hero/w3.png" alt="Apple Watch 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/hero/w4.png" alt="Apple Watch 3">
+                            </div>
+                        </div>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="slide-up" data-aos-duration="1000">Why Choose Saadullah Watches</h2>
+                <div class="feature" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="feature-icon" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                            <path d="M12 22C12.83 22 13.5 21.33 13.5 20.5S12.83 19 12 19 10.5 19.67 10.5 20.5 11.17 22 12 22Z" fill="currentColor"/>
+                            <path d="M17 13C17.55 13 18 12.55 18 12S17.55 11 17 11 16 11.45 16 12 16.45 13 17 13Z" fill="currentColor"/>
+                            <path d="M7 13C7.55 13 8 12.55 8 12S7.55 11 7 11 6 11.45 6 12 6.45 13 7 13Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Advanced Health Tracking</h3>
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Monitor your heart rate, sleep patterns, and daily activities with precision sensors and AI-powered insights for a healthier lifestyle.</p>
+                </div>
+                <div class="feature" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="feature-icon" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/water.png" alt="water-resistant">
+                    </div>
+                    <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Premium Water Resistance</h3>
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">Engineered with IP68 rating and 50m water resistance. Perfect for swimming, diving, and all your water adventures without compromise.</p>
+                </div>
+                <div class="feature" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="feature-icon" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/diamond--v1.png" alt="premium-design">
+                    </div>
+                    <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Luxury Design & Materials</h3>
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">Crafted with premium materials including sapphire crystal glass and titanium alloy for unmatched durability and elegance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="slide-up" data-aos-duration="1000">What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100">
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">"The Saadullah Watch has completely transformed my fitness routine. The health tracking is incredibly accurate and the battery lasts for days. Best smartwatch I've ever owned!"</p>
+                        <div class="author" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="avatar" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Fitness Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000">
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">"Elegant design meets cutting-edge technology. The water resistance feature saved my watch during my diving trip. Absolutely worth every penny!"</p>
+                        <div class="author" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <img src="https://i.pravatar.cc/150?img=2" alt="avatar" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>Professional Diver</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1000">
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">"The build quality is exceptional. Sapphire crystal glass and titanium construction make it both beautiful and durable. A true luxury timepiece!"</p>
+                        <div class="author" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <img src="https://i.pravatar.cc/150?img=3" alt="avatar" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="700">
+                            <div>
+                                <h4>Emma Rodriguez</h4>
+                                <span>Luxury Collector</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="slide-up" data-aos-duration="1000">Choose Your Perfect Watch</h2>
+                <div class="pricing-plans">
+                    <div class="pricing-plan" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100">
+                        <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Classic Edition</h3>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Essential Features</p>
+                        <p class="price" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">$299</p>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">Basic health tracking, water resistance, and 2-day battery life.</p>
+                        <a href="#" class="btn btn-secondary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Order Now</a>
+                    </div>
+                    <div class="pricing-plan popular" data-aos="slide-up" data-aos-delay="200" data-aos-duration="1000">
+                        <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Pro Edition</h3>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Advanced Features</p>
+                        <p class="price" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">$499</p>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Complete health suite, GPS, premium materials, and 5-day battery.</p>
+                        <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">Order Now</a>
+                    </div>
+                    <div class="pricing-plan" data-aos="slide-up" data-aos-delay="400" data-aos-duration="1000">
+                        <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">Luxury Edition</h3>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Premium Experience</p>
+                        <p class="price" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">$799</p>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Titanium build, sapphire crystal, cellular connectivity, and 7-day battery.</p>
+                        <a href="#" class="btn btn-secondary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-aos="fade-up" data-aos-duration="800">&copy; 2025 Saadullah Watches. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
